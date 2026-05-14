@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONTI NA LANG MANUNUNTOK NA</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="box">
+
+  <!-- SIDEBAR -->
+  <div class="nav">
+
+    <h2 class="logo">MUSIC PLAYER MO NA MALOPIT</h2>
+
+    <ul>
+
+      <li>
+        <button class="nav-btn active-nav" data-view="homePage">
+          <img src="PICS/home.jpg">
+          <span>Home</span>
+        </button>
+      </li>
+
+      <li>
+        <button class="nav-btn" data-view="albumsPage">
+          <img src="PICS/album.png">
+          <span>Albums</span>
+        </button>
+      </li>
+
+      <li>
+        <button class="nav-btn" data-view="favoritesPage">
+          <img src="PICS/fav.png">
+          <span>Library</span>
+        </button>
+      </li>
+
+      <li>
+        <button class="nav-btn" data-view="profilePage">
+          <img src="PICS/pfp.png">
+          <span>Profile</span>
+        </button>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- ================= HOME PAGE ================= -->
+
+    <div class="page active-page" id="homePage">
+
+      <div class="top">
+
+        <!-- ARTISTS -->
+        <div class="smallbox">
+
+          <div class="title-row">
+            <h2>Popular Artists</h2>
+            <p>Trending</p>
+          </div>
+
+          <div class="artist-list">
+
+            <div class="artist-card" data-artist="Michael Jackson">
+              <img src="PICS/thriller album.jpg">
+              <p>Michael Jackson</p>
+            </div>
+
+            <div class="artist-card" data-artist="The Weeknd">
+              <img src="PICS/The Weeknd.jfif">
+              <p>The Weeknd</p>
+            </div>
+
+            <div class="artist-card" data-artist="Kanye West">
+              <img src="PICS/bully.jfif">
+              <p>Kanye West</p>
+            </div>
+
+            <div class="artist-card" data-artist="Sabrina Carpenter">
+              <img src="PICS/sab2.jfif">
+              <p>Sabrina</p>
+            </div>
+
+            <div class="artist-card" data-artist="Don Toliver">
+              <img src="PICS/don.jfif">
+              <p>Don Toliver</p>
+            </div>
+
+            <div class="artist-card" data-artist="Frank Ocean">
+              <img src="PICS/Frank2.jfif">
+              <p>Frank Ocean</p>
+            </div>
+
+            <div class="artist-card" data-artist="Bruno Mars, Anderson .Paak, Thundercat">
+              <img src="PICS/bruno.jfif">
+              <p>Bruno Mars</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ALBUMS -->
+        <div class="smallbox">
+
+          <div class="title-row">
+            <h2>Popular Albums</h2>
+          </div>
+
+          <div class="album-list">
+
+            <div class="album-item" data-index="0">
+              <img src="PICS/thriller album.jpg">
+              <div>
+                <h4>Thriller</h4>
+                <p>Michael Jackson</p>
+              </div>
+            </div>
+
+            <div class="album-item" data-index="1">
+              <img src="PICS/The Weeknd.jfif">
+              <div>
+                <h4>After Hours</h4>
+                <p>The Weeknd</p>
+              </div>
+            </div>
+
+            <div class="album-item" data-index="2">
+              <img src="PICS/chicken.jfif">
+              <div>
+                <h4>Chicken n Beer</h4>
+                <p>Ludacris</p>
+              </div>
+            </div>
+
+            <div class="album-item" data-index="3">
+              <img src="PICS/bully.jfif">
+              <div>
+                <h4>Bully</h4>
+                <p>Kanye West</p>
+              </div>
+            </div>
+
+            <div class="album-item" data-index="4">
+              <img src="PICS/pac2.jfif">
+              <div>
+                <h4>Greatest Hits</h4>
+                <p>Tupac</p>
+              </div>
+            </div>
+
+            <div class="album-item" data-index="5">
+              <img src="PICS/bruno2.png">
+              <div>
+                <h4>An Evening With Silk Sonic</h4>
+                <p>Bruno Mars</p>
+              </div>
+            </div>
+
+            <div class="album-item" data-index="6">
+              <img src="PICS/ok.png">
+              <div>
+                <h4>OK Computer</h4>
+                <p>Radiohead</p>
+              </div>
+            </div>
+
+            <div class="album-item" data-index="7">
+              <img src="PICS/Sab.png">
+              <div>
+                <h4>Man's Best Friend</h4>
+                <p>Sabrina Carpenter</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PLAYER -->
+      <div class="bigbox">
+
+        <div class="player-side">
+
+          <img src="PICS/nothin.png" class="now-cover">
+
+          <h2 id="songTitle">Nothing Playing</h2>
+          <p id="songArtist">---</p>
+
+          <input type="range" value="0" id="progressBar">
+
+          <div class="time-wave">
+
+            <span id="currentTime">0:00</span>
+
+            <div class="wave" id="wave">
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+              <span></span>
+            </div>
+
+            <span id="duration">0:00</span>
+
+          </div>
+
+          <div class="controls">
+
+            <button id="prevBtn">⏮</button>
+            <button id="playBtn">▶</button>
+            <button id="nextBtn">⏭</button>
+
+          </div>
+
+        </div>
+
+        <div class="music-panels">
+
+          <div class="panel" id="queuePanel"></div>
+          <div class="panel" id="favoritePanel"></div>
+          <div class="panel" id="recentPanel"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================= ALBUM PAGE ================= -->
+
+    <div class="page" id="albumsPage">
+
+      <div class="page-header glass">
+        <h1>Albums</h1>
+        <p>Your music collection</p>
+      </div>
+
+      <div class="albums-grid">
+
+        <div class="album-card">
+          <img src="PICS/thriller album.jpg">
+          <h3>Thriller</h3>
+          <p>Michael Jackson</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/The Weeknd.jfif">
+          <h3>After Hours</h3>
+          <p>The Weeknd</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/chicken.jfif">
+          <h3>Chicken n Beer</h3>
+          <p>Ludacris</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/bully.jfif">
+          <h3>Bully</h3>
+          <p>Kanye West</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/pac2.jfif">
+          <h3>Greatest Hits</h3>
+          <p>Tupac</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/bruno2.png">
+          <h3>An Evening With Silk Sonic</h3>
+          <p>Bruno Mars</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/ok.png">
+          <h3>OK Computer</h3>
+          <p>Radiohead</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/Sab.png">
+          <h3>Man's Best Friend</h3>
+          <p>Sabrina Carpenter</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/silakbo.png">
+          <h3>Silakbo</h3>
+          <p>Cup of Joe</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/Frank.png">
+          <h3>Blond</h3>
+          <p>Frank Ocean</p>
+        </div>
+
+        <div class="album-card">
+          <img src="PICS/Trav.jpg">
+          <h3>Rodeo</h3>
+          <p>Travis Scott</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================= LIBRARY PAGE ================= -->
+
+    <div class="page" id="favoritesPage">
+
+  <div class="page-header glass">
+    <h1>Library</h1>
+    <p>All your songs</p>
+  </div>
+
+  <div id="favoritesPageList" class="panel"></div>
+
+</div>
+
+    <!-- ================= PROFILE PAGE ================= -->
+
+    <div class="page" id="profilePage">
+
+      <div class="profile-header glass">
+
+        <div class="profile-left">
+
+          <img src="PICS/pfp.gif" class="profile-avatar">
+
+          <div>
+            <h1>Enzo Duano</h1>
+            <p>Premium Member</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="metrics-grid">
+
+        <div class="metric-card glass">
+          <h3>Total Plays</h3>
+          <h1 id="totalPlays">0</h1>
+        </div>
+
+        <div class="metric-card glass">
+          <h3>Favorites</h3>
+          <h1 id="totalFavorites">0</h1>
+        </div>
+
+        <div class="metric-card glass">
+          <h3>Recent Songs</h3>
+          <h1 id="totalRecent">0</h1>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
