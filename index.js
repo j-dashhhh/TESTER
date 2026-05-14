@@ -10,7 +10,7 @@ const albums = [
   cover:"PICS/thriller album.jpg",
   songs:[
     { title:"Billie Jean", file:"music/BILLIE JEAN.weba", artist:"Michael Jackson"}, 
-    { title:"Thriller", file:"music/thriller.mp3", artist:"Michael Jackson"},
+    { title:"Thriller", file:"MUSIC/thriller.mp3", artist:"Michael Jackson"},
     { title:"Wanna Be Startin' Somethin", file:"music/Wanna Be Startin' Somethin'.mp3", artist:"Michael Jackson" },
     { title:"The Lady In My Life", file:"music/The Lady In My Life.mp3", artist:"Michael Jackson" },
     { title:"The Girl Is Mine", file:"music/The Girl Is Mine.mp3", artist:"Michael Jackson"},
