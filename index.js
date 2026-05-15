@@ -3,6 +3,7 @@ const audio = new Audio();
 let favorites = [];
 let recent = [];
 let totalPlays = 0;
+let currentIndex = 0;
 
 const albums = [
 {
@@ -140,8 +141,64 @@ const albums = [
 }
 ];
 
-let currentList = albums[0].songs;
-let currentIndex = 0;
+let searchInput;
+let searchResults;
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  searchInput = document.getElementById("searchBar");
+  searchResults = document.getElementById("searchResults");
+
+  const allSongs = albums.flatMap(album => album.songs);
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase().trim();
+
+    searchResults.innerHTML = "";
+
+    if (!query) {
+      searchResults.style.display = "none";
+      return;
+    }
+
+    const matches = allSongs.filter(song =>
+      song.title.toLowerCase().includes(query) ||
+      song.artist.toLowerCase().includes(query)
+    ).slice(0, 8);
+
+    if (matches.length === 0) {
+      searchResults.style.display = "none";
+      return;
+    }
+
+    searchResults.style.display = "block";
+
+    matches.forEach(song => {
+      const div = document.createElement("div");
+      div.className = "search-item";
+
+      div.innerHTML = `
+        <span>${song.title}</span>
+        <small>${song.artist}</small>
+      `;
+
+      div.onclick = () => {
+        const index = allSongs.indexOf(song);
+
+        currentList = allSongs;
+        currentIndex = index;
+
+        playSong();
+
+        searchResults.style.display = "none";
+        searchInput.value = "";
+      };
+
+      searchResults.appendChild(div);
+    });
+  });
+
+});
 
 const playBtn =
 document.getElementById("playBtn");
