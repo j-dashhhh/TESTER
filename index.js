@@ -3,7 +3,6 @@ const audio = new Audio();
 let favorites = [];
 let recent = [];
 let totalPlays = 0;
-let currentIndex = 0;
 
 const albums = [
 {
@@ -141,64 +140,8 @@ const albums = [
 }
 ];
 
-let searchInput;
-let searchResults;
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  searchInput = document.getElementById("searchBar");
-  searchResults = document.getElementById("searchResults");
-
-  const allSongs = albums.flatMap(album => album.songs);
-
-  searchInput.addEventListener("input", () => {
-    const query = searchInput.value.toLowerCase().trim();
-
-    searchResults.innerHTML = "";
-
-    if (!query) {
-      searchResults.style.display = "none";
-      return;
-    }
-
-    const matches = allSongs.filter(song =>
-      song.title.toLowerCase().includes(query) ||
-      song.artist.toLowerCase().includes(query)
-    ).slice(0, 8);
-
-    if (matches.length === 0) {
-      searchResults.style.display = "none";
-      return;
-    }
-
-    searchResults.style.display = "block";
-
-    matches.forEach(song => {
-      const div = document.createElement("div");
-      div.className = "search-item";
-
-      div.innerHTML = `
-        <span>${song.title}</span>
-        <small>${song.artist}</small>
-      `;
-
-      div.onclick = () => {
-        const index = allSongs.indexOf(song);
-
-        currentList = allSongs;
-        currentIndex = index;
-
-        playSong();
-
-        searchResults.style.display = "none";
-        searchInput.value = "";
-      };
-
-      searchResults.appendChild(div);
-    });
-  });
-
-});
+let currentList = albums[0].songs;
+let currentIndex = 0;
 
 const playBtn =
 document.getElementById("playBtn");
@@ -281,31 +224,6 @@ function updateNowPlaying(song){
   document.querySelector(".now-cover")
   .src = album.cover;
 }
-
-document.addEventListener("keydown", (e) => {
-
-  // prevent messing while typing in search/input
-  const tag = document.activeElement.tagName.toLowerCase();
-  if (tag === "input" || tag === "textarea") return;
-
-  // SPACE = play / pause
-  if (e.code === "Space") {
-    e.preventDefault();
-
-    if (!audio.src) return;
-
-    if (audio.paused) {
-      audio.play();
-      playBtn.textContent = "⏸";
-      miniPlay.textContent = "⏸";
-      animateWave();
-    } else {
-      audio.pause();
-      playBtn.textContent = "▶";
-      miniPlay.textContent = "▶";
-    }
-  }
-});
 
 /* ================= ALBUM CLICK ================= */
 
@@ -810,13 +728,12 @@ function updateMiniPlayer(song) {
 
 const oldPlaySong = playSong;
 
-playSong = async function () {
-  await oldPlaySong();
+playSong = function () {
+    oldPlaySong();
 
-  const song = currentList[currentIndex];
-
-  updateMiniPlayer(song);
-  toggleMini();
+    const song = currentList[currentIndex];
+    updateMiniPlayer(song);
+    toggleMini();
 };
 
 // SAFE FIX: prevent crash if setPlaylist doesn't exist
@@ -839,14 +756,13 @@ if (typeof setPlaylist === "function") {
 /* ================= MINI VISIBILITY ================= */
 
 function toggleMini() {
-  const activePage = document.querySelector(".page.active-page");
+    const homePage = document.getElementById("homePage");
 
-  // hide ONLY on home page
-  if (activePage && activePage.id === "homePage") {
-    miniPlayer.style.display = "none";
-  } else {
-    miniPlayer.style.display = "flex";
-  }
+    if (homePage.classList.contains("active-page")) {
+        miniPlayer.style.display = "none";
+    } else {
+        miniPlayer.style.display = "flex";
+    }
 }
 
 /* ================= KEEP MINI SYNC ================= */
