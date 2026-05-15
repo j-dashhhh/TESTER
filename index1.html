@@ -4,10 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trident And Friends</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index1.css">
 </head>
 
 <body>
+
+    <div id="loadingScreen" class="loading-screen">
+  
+  <!-- SIDEBAR SKELETON -->
+  <div class="sk-nav">
+    <div class="sk-logo shimmer"></div>
+
+    <div class="sk-nav-item shimmer"></div>
+    <div class="sk-nav-item shimmer"></div>
+    <div class="sk-nav-item shimmer"></div>
+    <div class="sk-nav-item shimmer"></div>
+  </div>
+
+  <!-- MAIN CONTENT SKELETON -->
+  <div class="sk-main">
+
+    <!-- TOP GRID -->
+    <div class="sk-top">
+
+      <div class="sk-box">
+        <div class="sk-title shimmer"></div>
+        <div class="sk-row shimmer"></div>
+        <div class="sk-row shimmer"></div>
+        <div class="sk-row shimmer"></div>
+      </div>
+
+      <div class="sk-box">
+        <div class="sk-title shimmer"></div>
+        <div class="sk-row shimmer"></div>
+        <div class="sk-row shimmer"></div>
+      </div>
+
+    </div>
+
+    <!-- PLAYER SKELETON -->
+    <div class="sk-player">
+
+      <div class="sk-cover shimmer"></div>
+
+      <div class="sk-line shimmer"></div>
+      <div class="sk-line small shimmer"></div>
+
+      <div class="sk-progress shimmer"></div>
+
+      <div class="sk-controls">
+        <div class="sk-btn shimmer"></div>
+        <div class="sk-btn shimmer"></div>
+        <div class="sk-btn shimmer"></div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
 <div class="box">
 
@@ -17,6 +71,11 @@
     <h2 class="logo">Jonathan and Friends Music Player</h2>
 
     <ul>
+
+     <div class="search-box">
+    <input type="text" id="searchBar" placeholder="Search songs or artists...">
+    <div id="searchResults" class="search-results"></div>
+    </div>
 
       <li>
         <button class="nav-btn active-nav" data-view="homePage">
@@ -122,6 +181,7 @@
               <div>
                 <h4>Thriller</h4>
                 <p>Michael Jackson</p>
+                <p>Pop</p>
               </div>
             </div>
 
@@ -130,6 +190,7 @@
               <div>
                 <h4>After Hours</h4>
                 <p>The Weeknd</p>
+                <p>R&B</p>
               </div>
             </div>
 
@@ -138,6 +199,7 @@
               <div>
                 <h4>Chicken n Beer</h4>
                 <p>Ludacris</p>
+                <p>Hip Hop</p>
               </div>
             </div>
 
@@ -146,6 +208,7 @@
               <div>
                 <h4>Bully</h4>
                 <p>Kanye West</p>
+                <p>Hip Hop</p>
               </div>
             </div>
 
@@ -154,6 +217,7 @@
               <div>
                 <h4>Greatest Hits</h4>
                 <p>Tupac</p>
+                <p>Hip Hop</p>
               </div>
             </div>
 
@@ -162,6 +226,7 @@
               <div>
                 <h4>An Evening With Silk Sonic</h4>
                 <p>Bruno Mars</p>
+                <p>Funk</p>
               </div>
             </div>
 
@@ -170,6 +235,7 @@
               <div>
                 <h4>OK Computer</h4>
                 <p>Radiohead</p>
+                <p>Alternative</p>
               </div>
             </div>
 
@@ -178,6 +244,7 @@
               <div>
                 <h4>Man's Best Friend</h4>
                 <p>Sabrina Carpenter</p>
+                <p>Pop</p>
               </div>
             </div>
 
@@ -203,12 +270,6 @@
 
             <span id="currentTime">0:00</span>
 
-            <div class="wave" id="wave">
-              <span></span><span></span><span></span>
-              <span></span><span></span><span></span>
-              <span></span>
-            </div>
-
             <span id="duration">0:00</span>
 
           </div>
@@ -220,6 +281,14 @@
             <button id="nextBtn">⏭</button>
 
           </div>
+          <div class="volume-control">
+          <span class="vol-icon">🔊</span>
+
+          <input type="range" id="volumeSlider" min="0" max="100" value="100">
+
+          <span id="volumeValue">100%</span>
+          </div>
+
 
         </div>
 
@@ -249,67 +318,78 @@
         <div class="album-card">
           <img src="PICS/thriller album.jpg">
           <h3>Thriller</h3>
-          <p>Michael Jackson</p>
+          <p>Artist: Michael Jackson</p>
+          <p>Pop</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/The Weeknd.jfif">
           <h3>After Hours</h3>
           <p>The Weeknd</p>
+          <p>R&B</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/chicken.jfif">
           <h3>Chicken n Beer</h3>
           <p>Ludacris</p>
+          <p>Hip Hop</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/bully.jfif">
           <h3>Bully</h3>
           <p>Kanye West</p>
+          <p>Hip Hop</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/pac2.jfif">
           <h3>Greatest Hits</h3>
           <p>Tupac</p>
+          <p>Hip Hop</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/bruno2.png">
           <h3>An Evening With Silk Sonic</h3>
           <p>Bruno Mars</p>
+          <p>Funk</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/ok.png">
           <h3>OK Computer</h3>
           <p>Radiohead</p>
+          <p>Alternative</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/Sab.png">
           <h3>Man's Best Friend</h3>
           <p>Sabrina Carpenter</p>
+          <p>Pop</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/silakbo.png">
           <h3>Silakbo</h3>
           <p>Cup of Joe</p>
+          <p>Pop</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/Frank.png">
           <h3>Blond</h3>
           <p>Frank Ocean</p>
+          <p>R&B</p>
         </div>
 
         <div class="album-card">
           <img src="PICS/Trav.jpg">
           <h3>Rodeo</h3>
           <p>Travis Scott</p>
+          <p>Hip Hop</p>
         </div>
 
       </div>
@@ -373,7 +453,7 @@
 
 </div>
 
-<script src="index.js"></script>
+<script src="index1.js"></script>
 
 </body>
 </html>

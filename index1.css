@@ -653,3 +653,261 @@ canvas{
   font-size:18px;
   cursor:pointer;
 }
+
+/* ================= LOADING SCREEN ================= */
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg,#121212,#1d1d1d);
+  z-index: 99999;
+  overflow: hidden;
+}
+
+/* ================= SHIMMER EFFECT ================= */
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255,255,255,0.06);
+  border-radius: 12px;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.12),
+    transparent
+  );
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -150%; }
+  100% { left: 150%; }
+}
+
+/* ================= SIDEBAR SKELETON ================= */
+
+.sk-nav {
+  width: 220px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sk-logo {
+  height: 30px;
+  width: 80%;
+}
+
+.sk-nav-item {
+  height: 45px;
+  border-radius: 12px;
+}
+
+/* ================= MAIN ================= */
+
+.sk-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* TOP GRID */
+.sk-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 280px;
+}
+
+.sk-box {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sk-title {
+  height: 25px;
+  width: 60%;
+}
+
+.sk-row {
+  height: 18px;
+  width: 100%;
+}
+
+/* ================= PLAYER ================= */
+
+.sk-player {
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.sk-cover {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+}
+
+.sk-line {
+  height: 18px;
+  width: 60%;
+}
+
+.sk-line.small {
+  width: 40%;
+}
+
+.sk-progress {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.sk-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.sk-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.search-box {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#searchBar {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.08);
+  color: white;
+}
+
+.search-results {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 999;
+}
+
+.search-item {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-item:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  width: fit-content;
+}
+
+/* ICON */
+.vol-icon {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* VALUE TEXT */
+#volumeValue {
+  font-size: 12px;
+  opacity: 0.7;
+  min-width: 40px;
+}
+
+/* SLIDER BASE */
+#volumeSlider {
+  width: 80px;
+  height: 4px;
+  appearance: none;
+  background: linear-gradient(to right, #1db954 100%, #444 0%);
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* THUMB (Chrome/Edge) */
+#volumeSlider::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #1db954;
+  box-shadow: 0 0 10px rgba(29, 185, 84, 0.6);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+#volumeSlider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* FIREFOX */
+#volumeSlider::-moz-range-track {
+  height: 4px;
+  border-radius: 10px;
+  background: #444;
+}
+
+#volumeSlider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #1db954;
+  border: none;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.volume-control:hover {
+  background: rgba(255, 255, 255, 0.12);
+}

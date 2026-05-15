@@ -9,133 +9,133 @@ const albums = [
   name:"Thriller",
   cover:"PICS/thriller album.jpg",
   songs:[
-    { title:"Billie Jean", file:"music/BILLIE JEAN.weba", artist:"Michael Jackson"}, 
-    { title:"Thriller", file:"music/thriller.mp3", artist:"Michael Jackson"},
-    { title:"Wanna Be Startin' Somethin", file:"music/Wanna Be Startin' Somethin'.mp3", artist:"Michael Jackson" },
-    { title:"The Lady In My Life", file:"music/The Lady In My Life.mp3", artist:"Michael Jackson" },
-    { title:"The Girl Is Mine", file:"music/The Girl Is Mine.mp3", artist:"Michael Jackson"},
-    { title:"Human Nature", file:"music/Human Nature.mp3", artist:"Michael Jackson"},
-    { title:"Baby Be Mine", file:"music/Baby Be Mine.mp3", artist:"Michael Jackson"}, 
-    { title:"Beat It", file:"music/Beat It.mp3", artist:"Michael Jackson" }
+    { title:"Billie Jean", file:"music/BILLIE JEAN.weba", artist:"Michael Jackson", album: "Thriller", genre: "Pop",}, 
+    { title:"Thriller", file:"music/thriller.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
+    { title:"Wanna Be Startin' Somethin", file:"music/Wanna Be Startin' Somethin'.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
+    { title:"The Lady In My Life", file:"music/The Lady In My Life.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
+    { title:"The Girl Is Mine", file:"music/The Girl Is Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
+    { title:"Human Nature", file:"music/Human Nature.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
+    { title:"Baby Be Mine", file:"music/Baby Be Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"}, 
+    { title:"Beat It", file:"music/Beat It.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" }
   ]
 },
 {
   name:"After Hours",
   cover:"PICS/The Weeknd.jfif",
   songs:[
-    { title:"The Morning", file:"music/The Morning.mp3", artist:"The Weeknd"}, 
-    { title:"The Hills", file:"music/The Hills.mp3", artist:"The Weeknd"},
-    { title:"Sao Paulo", file:"music/sao.mp3", artist:"The Weeknd" },
-    { title:"I Was Never There", file:"music/I Was Never There.mp3", artist:"The Weeknd" },
-    { title:"What You Need", file:"music/What You Need.mp3", artist:"The Weeknd"}
+    { title:"The Morning", file:"music/The Morning.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"}, 
+    { title:"The Hills", file:"music/The Hills.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"},
+    { title:"Sao Paulo", file:"music/sao.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B" },
+    { title:"I Was Never There", file:"music/I Was Never There.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B" },
+    { title:"What You Need", file:"music/What You Need.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"}
   ]
 },
 {
   name:"Chicken n Beer",
   cover:"PICS/chicken.jfif",
   songs:[
-     { title:"Act A Fool", file:"music/Act A Fool luda.mp3", artist:"Ludacris"}, 
-    { title:"Move Bitch", file:"music/Move Bitch 2.mp3", artist:"Ludacris"},
-    { title:"Stand Up", file:"music/Stand Up luda.mp3", artist:"Ludacris" },
-    { title:"Hard Times", file:"music/Hard Times luda.mp3", artist:"Ludacris" },
-    { title:"Blow It Out", file:"music/Blow It Out luda.mp3", artist:"Ludacris"}
+     { title:"Act A Fool", file:"music/Act A Fool luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"}, 
+    { title:"Move Bitch", file:"music/Move Bitch 2.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"},
+    { title:"Stand Up", file:"music/Stand Up luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop" },
+    { title:"Hard Times", file:"music/Hard Times luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop" },
+    { title:"Blow It Out", file:"music/Blow It Out luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"}
   ]
 },
 {
   name:"Bully",
   cover:"PICS/bully.jfif",
   songs:[
-     { title:"THIS A MUST", file:"music/THIS A MUST.mp3", artist:"Kanye West"}, 
-    { title:"PREACHER MAN", file:"music/PREACHER MAN.mp3", artist:"Kanye West"}, 
-    { title:"LAST BREATH", file:"music/LAST BREATH (feat. Peso Pluma).mp3", artist:"Kanye West"}, 
-    { title:"FATHER", file:"music/FATHER (feat. Travis Scott).mp3", artist:"Kanye West"}
+     { title:"THIS A MUST", file:"music/THIS A MUST.mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}, 
+    { title:"PREACHER MAN", file:"music/PREACHER MAN.mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}, 
+    { title:"LAST BREATH", file:"music/LAST BREATH (feat. Peso Pluma).mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}, 
+    { title:"FATHER", file:"music/FATHER (feat. Travis Scott).mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}
   ]
 },
 {
   name:"Tupac Greatest Hits",
   cover:"PICS/pac2.jfif",
   songs:[
-     { title:"Hit 'Em Up", file:"music/Hit 'Em Up.mp3", artist:"Tupac"}, 
-    { title:"2 Of Amerikaz Most Wanted", file:"music/2 Of Amerikaz Most Wanted.mp3", artist:"Tupac"},
-    { title:"California Love", file:"music/California Love.mp3", artist:"Tupac" },
-    { title:"Dear Mama", file:"music/Dear Mama.mp3", artist:"Tupac" }
+     { title:"Hit 'Em Up", file:"music/Hit 'Em Up.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop"}, 
+    { title:"2 Of Amerikaz Most Wanted", file:"music/2 Of Amerikaz Most Wanted.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop"},
+    { title:"California Love", file:"music/California Love.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop" },
+    { title:"Dear Mama", file:"music/Dear Mama.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop" }
   ]
 },
 {
   name:"An Evening With Silk Sonic",
   cover:"PICS/bruno2.png",
   songs:[ 
-    { title:"After Last Night", file:"music/After Last Night.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat"},
-    { title:"Leave The Door Open", file:"music/Leave The Door Open.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat"},
-    { title:"Smokin Out The Window", file:"music/Smokin Out The Window.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat" },
-    { title:"Skate", file:"music/Skate.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat"},
-    { title:"Love's Train", file:"music/Love's Train.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat"}
+    { title:"After Last Night", file:"music/After Last Night.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
+    { title:"Leave The Door Open", file:"music/Leave The Door Open.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
+    { title:"Smokin Out The Window", file:"music/Smokin Out The Window.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
+    { title:"Skate", file:"music/Skate.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
+    { title:"Love's Train", file:"music/Love's Train.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" }
   ]
 },
 {
   name:"OK Computer",
   cover:"PICS/ok.png",
   songs:[ 
-    { title:"Exit Music", file:"music/Exit Music.mp3", artist:"Radiohead"},
-    { title:"Let Down", file:"music/Let Down.mp3", artist:"Radiohead"},
-    { title:"Karma Police", file:"music/Karma Police.mp3", artist:"Radiohead" },
-    { title:"No Surprises", file:"music/No Surprises.mp3", artist:"Radiohead"},
-    { title:"Lucky", file:"music/Lucky.mp3", artist:"Radiohead"}
+    { title:"Exit Music", file:"music/Exit Music.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
+    { title:"Let Down", file:"music/Let Down.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
+    { title:"Karma Police", file:"music/Karma Police.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
+    { title:"No Surprises", file:"music/No Surprises.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
+    { title:"Lucky", file:"music/Lucky.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" }
   ]
 },
 {
   name:"Sabrina Carpenter",
   cover:"PICS/Sab.png",
   songs:[ 
-    { title:"Manchild", file:"music/Manchild.mp3", artist:"Sabrina Carpenter"},
-    { title:"Tears", file:"music/Tears.mp3", artist:"Sabrina Carpenter"},
-    { title:"My Man on Willpower", file:"music/My Man on Willpower.mp3", artist:"Sabrina Carpenter" },
-    { title:"Sugar Talking", file:"music/Sugar Talking.mp3", artist:"Sabrina Carpenter"},
-    { title:"We Almost Broke Up Again Last Night", file:"music/We Almost Broke Up Again Last Night.mp3", artist:"Sabrina Carpenter"}
+    { title:"Manchild", file:"music/Manchild.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
+    { title:"Tears", file:"music/Tears.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
+    { title:"My Man on Willpower", file:"music/My Man on Willpower.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
+    { title:"Sugar Talking", file:"music/Sugar Talking.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
+    { title:"We Almost Broke Up Again Last Night", file:"music/We Almost Broke Up Again Last Night.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" }
   ]
 },
 {
   name:"Silakbo",
   cover:"PICS/silakbo.png",
   songs:[ 
-    { title:"Multo", file:"music/Multo.mp3", artist:"Cup of Joe"},
-    { title:"'Di Maaari", file:"music/di.mp3", artist:"Cup of Joe"},
-    { title:"Hinga", file:"music/Hinga.mp3", artist:"Cup of Joe" },
-    { title:"Silakbo", file:"music/Silakbo.mp3", artist:"Cup of Joe"},
-    { title:"Bagyo", file:"music/Bagyo.mp3", artist:"Cup of Joe"}
+    { title:"Multo", file:"music/Multo.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
+    { title:"'Di Maaari", file:"music/di.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
+    { title:"Hinga", file:"music/Hinga.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
+    { title:"Silakbo", file:"music/Silakbo.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
+    { title:"Bagyo", file:"music/Bagyo.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" }
   ]
 },
 {
   name:"Blond",
   cover:"PICS/Frank.png",
   songs:[ 
-    { title:"Pink + White", file:"music/Pink + White.mp3", artist:"Frank Ocean"},
-    { title:"Nights", file:"music/Nights.mp3", artist:"Frank Ocean"},
-    { title:"White Ferarri", file:"music/White Ferarri.mp3", artist:"Frank Ocean" },
-    { title:"Seigfried", file:"music/Seigfried.mp3", artist:"Frank Ocean"},
-    { title:"Godspeed", file:"music/Godspeed.mp3", artist:"Frank Ocean"}
+    { title:"Pink + White", file:"music/Pink + White.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
+    { title:"Nights", file:"music/Nights.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
+    { title:"White Ferarri", file:"music/White Ferarri.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
+    { title:"Seigfried", file:"music/Seigfried.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
+    { title:"Godspeed", file:"music/Godspeed.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" }
   ]
 },
 {
   name:"Travis Scott",
   cover:"PICS/Trav.jpg",
   songs:[ 
-    { title:"90210", file:"music/90210.mp3", artist:"Travis Scott"},
-    { title:"FE!N", file:"music/FE!N.mp3", artist:"Travis Scott"},
-    { title:"MY EYES", file:"music/MY EYES.mp3", artist:"Travis Scott" },
-    { title:"sdp interlude", file:"music/sdp interlude.mp3", artist:"Travis Scott"},
-    { title:"goosebumps", file:"music/goosebumps.mp3", artist:"Travis Scott"}
+    { title:"90210", file:"music/90210.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
+    { title:"FE!N", file:"music/FE!N.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
+    { title:"MY EYES", file:"music/MY EYES.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
+    { title:"sdp interlude", file:"music/sdp interlude.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
+    { title:"goosebumps", file:"music/goosebumps.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" }
   ]
 },
 {
   name:"Don Toliver",
   cover:"PICS/don.jfif",
   songs:[ 
-    { title:"Tiramisu", file:"music/Tiramisu.mp3", artist:"Don Toliver"},
-    { title:"E85", file:"music/E85.mp3", artist:"Don Toliver"},
-    { title:"No Idea", file:"music/No Idea.mp3", artist:"Don Toliver" },
-    { title:"No Pole", file:"music/No Pole.mp3", artist:"Don Toliver"},
-    { title:"You", file:"music/You (feat. Travis Scott).mp3", artist:"Don Toliver"}
+    { title:"Tiramisu", file:"music/Tiramisu.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
+    { title:"E85", file:"music/E85.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
+    { title:"No Idea", file:"music/No Idea.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
+    { title:"No Pole", file:"music/No Pole.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
+    { title:"You", file:"music/You (feat. Travis Scott).mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" }
   ]
 }
 ];
@@ -216,6 +216,9 @@ function updateNowPlaying(song){
   document.getElementById("songArtist")
   .textContent = song.artist;
 
+  document.getElementById("songArtist")
+  .textContent = song.artist;
+
   const album =
   albums.find(a =>
     a.songs.includes(song)
@@ -224,31 +227,6 @@ function updateNowPlaying(song){
   document.querySelector(".now-cover")
   .src = album.cover;
 }
-
-document.addEventListener("keydown", (e) => {
-
-  // prevent messing while typing in search/input
-  const tag = document.activeElement.tagName.toLowerCase();
-  if (tag === "input" || tag === "textarea") return;
-
-  // SPACE = play / pause
-  if (e.code === "Space") {
-    e.preventDefault();
-
-    if (!audio.src) return;
-
-    if (audio.paused) {
-      audio.play();
-      playBtn.textContent = "⏸";
-      miniPlay.textContent = "⏸";
-      animateWave();
-    } else {
-      audio.pause();
-      playBtn.textContent = "▶";
-      miniPlay.textContent = "▶";
-    }
-  }
-});
 
 /* ================= ALBUM CLICK ================= */
 
@@ -544,7 +522,7 @@ function addRecent(song){
 
   recent.unshift(song);
 
-  recent = recent.slice(0,10);
+  recent = recent.slice(0,20);
 
   renderRecent();
   updateProfileStats();
@@ -588,12 +566,7 @@ function updateProfileStats(){
 
 /* ================= WAVE ================= */
 
-function animateWave(){
-
-  const bars =
-  document.querySelectorAll(".wave span");
-
-  let waveRunning = false;
+let waveRunning = false;
 
 function animateWave() {
   if (!waveRunning) return;
@@ -607,9 +580,6 @@ function animateWave() {
   requestAnimationFrame(animateWave);
 }
 
-  requestAnimationFrame(animateWave);
-};
-
 function startWave() {
   if (waveRunning) return;
   waveRunning = true;
@@ -619,8 +589,7 @@ function startWave() {
 function stopWave() {
   waveRunning = false;
 
-  const bars = document.querySelectorAll(".wave span");
-  bars.forEach(bar => {
+  document.querySelectorAll(".wave span").forEach(bar => {
     bar.style.height = "5px";
   });
 }
@@ -841,3 +810,92 @@ audio.addEventListener("pause", () => {
 setTimeout(() => {
     toggleMini();
 }, 300);
+
+//load
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.getElementById("loadingScreen");
+
+  setTimeout(() => {
+    if (loader) {
+      loader.style.opacity = "0";
+      loader.style.transition = "0.4s ease";
+
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 400);
+    }
+  }, 600);
+});
+
+//search
+let searchInput;
+let searchResults;
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  searchInput = document.getElementById("searchBar");
+  searchResults = document.getElementById("searchResults");
+
+  const allSongs = albums.flatMap(album => album.songs);
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase().trim();
+
+    searchResults.innerHTML = "";
+
+    if (!query) {
+      searchResults.style.display = "none";
+      return;
+    }
+
+    const matches = allSongs.filter(song =>
+      song.title.toLowerCase().includes(query) ||
+      song.artist.toLowerCase().includes(query)
+    ).slice(0, 8);
+
+    if (matches.length === 0) {
+      searchResults.style.display = "none";
+      return;
+    }
+
+    searchResults.style.display = "block";
+
+    matches.forEach(song => {
+      const div = document.createElement("div");
+      div.className = "search-item";
+
+      div.innerHTML = `
+        <span>${song.title}</span>
+        <small>${song.artist}</small>
+      `;
+
+      div.onclick = () => {
+        const index = allSongs.indexOf(song);
+
+        currentList = allSongs;
+        currentIndex = index;
+
+        playSong();
+
+        searchResults.style.display = "none";
+        searchInput.value = "";
+      };
+
+      searchResults.appendChild(div);
+    });
+  });
+
+});
+
+const volumeSlider = document.getElementById("volumeSlider");
+const volumeValue = document.getElementById("volumeValue");
+
+// set initial volume
+audio.volume = 1;
+
+volumeSlider.addEventListener("input", () => {
+  const volume = volumeSlider.value / 100;
+  audio.volume = volume;
+
+  volumeValue.textContent = volumeSlider.value + "%";
+});
