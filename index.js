@@ -225,6 +225,31 @@ function updateNowPlaying(song){
   .src = album.cover;
 }
 
+document.addEventListener("keydown", (e) => {
+
+  // prevent messing while typing in search/input
+  const tag = document.activeElement.tagName.toLowerCase();
+  if (tag === "input" || tag === "textarea") return;
+
+  // SPACE = play / pause
+  if (e.code === "Space") {
+    e.preventDefault();
+
+    if (!audio.src) return;
+
+    if (audio.paused) {
+      audio.play();
+      playBtn.textContent = "⏸";
+      miniPlay.textContent = "⏸";
+      animateWave();
+    } else {
+      audio.pause();
+      playBtn.textContent = "▶";
+      miniPlay.textContent = "▶";
+    }
+  }
+});
+
 /* ================= ALBUM CLICK ================= */
 
 document.addEventListener("click", (e) => {
