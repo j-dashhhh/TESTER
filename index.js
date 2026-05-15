@@ -339,6 +339,31 @@ document.getElementById("prevBtn")
   playSong();
 };
 
+/*SPACE PAUSE*/
+
+document.addEventListener("keydown", (e) => {
+  // ignore if user is typing
+  const tag = document.activeElement.tagName.toLowerCase();
+  if (tag === "input" || tag === "textarea") return;
+
+  // SPACE = play/pause
+  if (e.code === "Space") {
+    e.preventDefault();
+
+    if (!audio.src) return;
+
+    if (audio.paused) {
+      audio.play();
+      playBtn.textContent = "⏸";
+      miniPlay.textContent = "⏸";
+    } else {
+      audio.pause();
+      playBtn.textContent = "▶";
+      miniPlay.textContent = "▶";
+    }
+  }
+});
+
 /* ================= PROGRESS ================= */
 
 audio.addEventListener("timeupdate", ()=>{
