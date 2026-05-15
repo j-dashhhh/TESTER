@@ -342,24 +342,30 @@ document.getElementById("prevBtn")
 /*SPACE PAUSE*/
 
 document.addEventListener("keydown", (e) => {
-  // ignore if user is typing
+  if (e.code !== "Space") return;
+
   const tag = document.activeElement.tagName.toLowerCase();
   if (tag === "input" || tag === "textarea") return;
 
-  // SPACE = play/pause
-  if (e.code === "Space") {
-    e.preventDefault();
+  if (!audio.src) return;
 
-    if (!audio.src) return;
+  e.preventDefault();
 
-    if (audio.paused) {
-      audio.play();
-      playBtn.textContent = "⏸";
-      miniPlay.textContent = "⏸";
-    } else {
-      audio.pause();
-      playBtn.textContent = "▶";
+  const isPlaying = !audio.paused;
+
+  if (isPlaying) {
+    audio.pause();
+    playBtn.textContent = "▶";
+
+    if (typeof miniPlay !== "undefined") {
       miniPlay.textContent = "▶";
+    }
+  } else {
+    audio.play();
+    playBtn.textContent = "⏸";
+
+    if (typeof miniPlay !== "undefined") {
+      miniPlay.textContent = "⏸";
     }
   }
 });
