@@ -299,24 +299,16 @@ document.querySelectorAll(".artist-card")
 
 /* ================= CONTROLS ================= */
 
-playBtn.onclick = ()=>{
-
-  if(audio.paused){
-
+playBtn.onclick = () => {
+  if (audio.paused) {
     audio.play();
-
     playBtn.textContent = "⏸";
-
-    animateWave();
-  }
-
-  else{
-
+    startWave(); // ✅ FIX
+  } else {
     audio.pause();
-
     playBtn.textContent = "▶";
+    stopWave(); // ✅ FIX
   }
-
 };
 
 document.getElementById("nextBtn")
@@ -576,25 +568,37 @@ function animateWave(){
   const bars =
   document.querySelectorAll(".wave span");
 
-  if(audio.paused){
+  let waveRunning = false;
 
-    bars.forEach(bar=>{
+function animateWave() {
+  if (!waveRunning) return;
 
-      bar.style.height = "5px";
-    });
+  const bars = document.querySelectorAll(".wave span");
 
-    return;
-  }
-
-  bars.forEach(bar=>{
-
-    bar.style.height =
-    Math.random() * 30 + 5 + "px";
-
+  bars.forEach(bar => {
+    bar.style.height = (Math.random() * 30 + 5) + "px";
   });
 
   requestAnimationFrame(animateWave);
+}
+
+  requestAnimationFrame(animateWave);
 };
+
+function startWave() {
+  if (waveRunning) return;
+  waveRunning = true;
+  animateWave();
+}
+
+function stopWave() {
+  waveRunning = false;
+
+  const bars = document.querySelectorAll(".wave span");
+  bars.forEach(bar => {
+    bar.style.height = "5px";
+  });
+}
 
 
 /* ================= FIX: LIBRARY PAGE (ALL SONGS LISTED + PLAYABLE) ================= */
@@ -717,10 +721,12 @@ miniPlay.onclick = () => {
     audio.play();
     miniPlay.textContent = "⏸";
     playBtn.textContent = "⏸";
+    startWave(); // ✅ FIX
   } else {
     audio.pause();
     miniPlay.textContent = "▶";
     playBtn.textContent = "▶";
+    stopWave(); // ✅ FIX
   }
 };
 
