@@ -682,18 +682,39 @@ const miniPlayer = document.createElement("div");
 miniPlayer.className = "mini-player";
 
 miniPlayer.innerHTML = `
-    <div class="mini-left">
-        <img id="miniCover" src="" />
-        <div>
-            <p id="miniTitle">Not Playing</p>
-            <small id="miniArtist">---</small>
+    <div class="mini-top">
+
+        <div class="mini-left">
+            <img id="miniCover" src="" />
+
+            <div class="mini-info">
+                <p id="miniTitle">Not Playing</p>
+                <small id="miniArtist">---</small>
+            </div>
         </div>
+
+        <div class="mini-controls">
+            <button id="miniPrev">⏮</button>
+            <button id="miniPlay">▶</button>
+            <button id="miniNext">⏭</button>
+        </div>
+
     </div>
 
-    <div class="mini-controls">
-        <button id="miniPrev">⏮</button>
-        <button id="miniPlay">▶</button>
-        <button id="miniNext">⏭</button>
+    <div class="mini-bottom">
+
+        <span id="miniCurrent">0:00</span>
+
+        <input
+          type="range"
+          id="miniProgress"
+          min="0"
+          max="100"
+          value="0"
+        >
+
+        <span id="miniDuration">0:00</span>
+
     </div>
 `;
 
@@ -898,4 +919,38 @@ volumeSlider.addEventListener("input", () => {
   audio.volume = volume;
 
   volumeValue.textContent = volumeSlider.value + "%";
+});
+
+/* ================= MINI PLAYER PROGRESS ================= */
+
+const miniProgress = document.getElementById("miniProgress");
+const miniCurrent = document.getElementById("miniCurrent");
+const miniDuration = document.getElementById("miniDuration");
+
+audio.addEventListener("timeupdate", () => {
+
+  if (!audio.duration) return;
+
+  // progress %
+  const percent =
+    (audio.currentTime / audio.duration) * 100;
+
+  // FIX
+  miniProgress.value = percent;
+
+  // current time
+  miniCurrent.textContent =
+    format(audio.currentTime);
+
+  // duration
+  miniDuration.textContent =
+    format(audio.duration);
+});
+
+/* SEEKING */
+miniProgress.addEventListener("input", () => {
+
+  audio.currentTime =
+    (miniProgress.value / 100) * audio.duration;
+
 });
