@@ -810,12 +810,13 @@ function updateMiniPlayer(song) {
 
 const oldPlaySong = playSong;
 
-playSong = function () {
-    oldPlaySong();
+playSong = async function () {
+  await oldPlaySong();
 
-    const song = currentList[currentIndex];
-    updateMiniPlayer(song);
-    toggleMini();
+  const song = currentList[currentIndex];
+
+  updateMiniPlayer(song);
+  toggleMini();
 };
 
 // SAFE FIX: prevent crash if setPlaylist doesn't exist
@@ -838,13 +839,14 @@ if (typeof setPlaylist === "function") {
 /* ================= MINI VISIBILITY ================= */
 
 function toggleMini() {
-    const homePage = document.getElementById("homePage");
+  const activePage = document.querySelector(".page.active-page");
 
-    if (homePage.classList.contains("active-page")) {
-        miniPlayer.style.display = "none";
-    } else {
-        miniPlayer.style.display = "flex";
-    }
+  // hide ONLY on home page
+  if (activePage && activePage.id === "homePage") {
+    miniPlayer.style.display = "none";
+  } else {
+    miniPlayer.style.display = "flex";
+  }
 }
 
 /* ================= KEEP MINI SYNC ================= */
