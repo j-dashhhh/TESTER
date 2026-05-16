@@ -13,10 +13,10 @@ const albums = [
     { title:"Thriller", file:"MUSIC/thriller.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
     { title:"Wanna Be Startin' Somethin", file:"MUSIC/Wanna Be Startin' Somethin'.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
     { title:"The Lady In My Life", file:"MUSIC/The Lady In My Life.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
-    { title:"The Girl Is Mine", file:"music/The Girl Is Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
-    { title:"Human Nature", file:"music/Human Nature.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
-    { title:"Baby Be Mine", file:"music/Baby Be Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"}, 
-    { title:"Beat It", file:"music/Beat It.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" }
+    { title:"The Girl Is Mine", file:"MUSIC/The Girl Is Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
+    { title:"Human Nature", file:"MUSIC/Human Nature.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
+    { title:"Baby Be Mine", file:"MUSIC/Baby Be Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"}, 
+    { title:"Beat It", file:"MUSIC/Beat It.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" }
   ]
 },
 {
@@ -26,8 +26,8 @@ const albums = [
     { title:"The Morning", file:"MUSIC/The Morning.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"}, 
     { title:"The Hills", file:"MUSIC/The Hills.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"},
     { title:"Sao Paulo", file:"MUSIC/sao.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B" },
-    { title:"I Was Never There", file:"music/I Was Never There.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B" },
-    { title:"What You Need", file:"music/What You Need.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"}
+    { title:"I Was Never There", file:"MUSIC/I Was Never There.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B" },
+    { title:"What You Need", file:"MUSIC/What You Need.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"}
   ]
 },
 {
@@ -36,106 +36,106 @@ const albums = [
   songs:[
      { title:"Act A Fool", file:"MUSIC/Act A Fool luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"}, 
     { title:"Move Bitch", file:"MUSIC/Move Bitch 2.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"},
-    { title:"Stand Up", file:"music/Stand Up luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop" },
-    { title:"Hard Times", file:"music/Hard Times luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop" },
-    { title:"Blow It Out", file:"music/Blow It Out luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"}
+    { title:"Stand Up", file:"MUSIC/Stand Up luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop" },
+    { title:"Hard Times", file:"MUSIC/Hard Times luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop" },
+    { title:"Blow It Out", file:"MUSIC/Blow It Out luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"}
   ]
 },
 {
   name:"Bully",
   cover:"PICS/bully.jfif",
   songs:[
-     { title:"THIS A MUST", file:"music/THIS A MUST.mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}, 
-    { title:"PREACHER MAN", file:"music/PREACHER MAN.mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}, 
-    { title:"LAST BREATH", file:"music/LAST BREATH (feat. Peso Pluma).mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}, 
-    { title:"FATHER", file:"music/FATHER (feat. Travis Scott).mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}
+     { title:"THIS A MUST", file:"MUSIC/THIS A MUST.mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}, 
+    { title:"PREACHER MAN", file:"MUSIC/PREACHER MAN.mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}, 
+    { title:"LAST BREATH", file:"MUSIC/LAST BREATH (feat. Peso Pluma).mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}, 
+    { title:"FATHER", file:"MUSIC/FATHER (feat. Travis Scott).mp3", artist:"Kanye West", album: "Bully", genre: "Hip Hop"}
   ]
 },
 {
   name:"Tupac Greatest Hits",
   cover:"PICS/pac2.jfif",
   songs:[
-     { title:"Hit 'Em Up", file:"music/Hit 'Em Up.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop"}, 
-    { title:"2 Of Amerikaz Most Wanted", file:"music/2 Of Amerikaz Most Wanted.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop"},
-    { title:"California Love", file:"music/California Love.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop" },
-    { title:"Dear Mama", file:"music/Dear Mama.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop" }
+     { title:"Hit 'Em Up", file:"MUSIC/Hit 'Em Up.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop"}, 
+    { title:"2 Of Amerikaz Most Wanted", file:"MUSIC/2 Of Amerikaz Most Wanted.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop"},
+    { title:"California Love", file:"MUSIC/California Love.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop" },
+    { title:"Dear Mama", file:"MUSIC/Dear Mama.mp3", artist:"Tupac", album: "Greatest Hits", genre: "Hip Hop" }
   ]
 },
 {
   name:"An Evening With Silk Sonic",
   cover:"PICS/bruno2.png",
   songs:[ 
-    { title:"After Last Night", file:"music/After Last Night.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
-    { title:"Leave The Door Open", file:"music/Leave The Door Open.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
-    { title:"Smokin Out The Window", file:"music/Smokin Out The Window.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
-    { title:"Skate", file:"music/Skate.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
-    { title:"Love's Train", file:"music/Love's Train.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" }
+    { title:"After Last Night", file:"MUSIC/After Last Night.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
+    { title:"Leave The Door Open", file:"MUSIC/Leave The Door Open.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
+    { title:"Smokin Out The Window", file:"MUSIC/Smokin Out The Window.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
+    { title:"Skate", file:"MUSIC/Skate.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" },
+    { title:"Love's Train", file:"MUSIC/Love's Train.mp3", artist:"Bruno Mars, Anderson .Paak, Thundercat", album: "An Evening With Silk Sonic", genre: "Funk" }
   ]
 },
 {
   name:"OK Computer",
   cover:"PICS/ok.png",
   songs:[ 
-    { title:"Exit Music", file:"music/Exit Music.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
-    { title:"Let Down", file:"music/Let Down.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
-    { title:"Karma Police", file:"music/Karma Police.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
-    { title:"No Surprises", file:"music/No Surprises.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
-    { title:"Lucky", file:"music/Lucky.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" }
+    { title:"Exit Music", file:"MUSIC/Exit Music.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
+    { title:"Let Down", file:"MUSIC/Let Down.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
+    { title:"Karma Police", file:"MUSIC/Karma Police.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
+    { title:"No Surprises", file:"MUSIC/No Surprises.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" },
+    { title:"Lucky", file:"MUSIC/Lucky.mp3", artist:"Radiohead", album: "OK Computer", genre: "Alternative" }
   ]
 },
 {
   name:"Sabrina Carpenter",
   cover:"PICS/Sab.png",
   songs:[ 
-    { title:"Manchild", file:"music/Manchild.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
-    { title:"Tears", file:"music/Tears.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
-    { title:"My Man on Willpower", file:"music/My Man on Willpower.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
-    { title:"Sugar Talking", file:"music/Sugar Talking.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
-    { title:"We Almost Broke Up Again Last Night", file:"music/We Almost Broke Up Again Last Night.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" }
+    { title:"Manchild", file:"MUSIC/Manchild.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
+    { title:"Tears", file:"MUSIC/Tears.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
+    { title:"My Man on Willpower", file:"MUSIC/My Man on Willpower.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
+    { title:"Sugar Talking", file:"MUSIC/Sugar Talking.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" },
+    { title:"We Almost Broke Up Again Last Night", file:"MUSIC/We Almost Broke Up Again Last Night.mp3", artist:"Sabrina Carpenter", album: "Sabrina Carpenter", genre: "Pop" }
   ]
 },
 {
   name:"Silakbo",
   cover:"PICS/silakbo.png",
   songs:[ 
-    { title:"Multo", file:"music/Multo.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
-    { title:"'Di Maaari", file:"music/di.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
-    { title:"Hinga", file:"music/Hinga.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
-    { title:"Silakbo", file:"music/Silakbo.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
-    { title:"Bagyo", file:"music/Bagyo.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" }
+    { title:"Multo", file:"MUSIC/Multo.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
+    { title:"'Di Maaari", file:"MUSIC/di.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
+    { title:"Hinga", file:"MUSIC/Hinga.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
+    { title:"Silakbo", file:"MUSIC/Silakbo.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" },
+    { title:"Bagyo", file:"MUSIC/Bagyo.mp3", artist:"Cup of Joe", album: "Silakbo", genre: "Pop" }
   ]
 },
 {
   name:"Blond",
   cover:"PICS/Frank.png",
   songs:[ 
-    { title:"Pink + White", file:"music/Pink + White.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
-    { title:"Nights", file:"music/Nights.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
-    { title:"White Ferarri", file:"music/White Ferarri.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
-    { title:"Seigfried", file:"music/Seigfried.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
-    { title:"Godspeed", file:"music/Godspeed.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" }
+    { title:"Pink + White", file:"MUSIC/Pink + White.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
+    { title:"Nights", file:"MUSIC/Nights.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
+    { title:"White Ferarri", file:"MUSIC/White Ferarri.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
+    { title:"Seigfried", file:"MUSIC/Seigfried.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
+    { title:"Godspeed", file:"MUSIC/Godspeed.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" }
   ]
 },
 {
   name:"Travis Scott",
   cover:"PICS/Trav.jpg",
   songs:[ 
-    { title:"90210", file:"music/90210.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
-    { title:"FE!N", file:"music/FE!N.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
-    { title:"MY EYES", file:"music/MY EYES.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
-    { title:"sdp interlude", file:"music/sdp interlude.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
-    { title:"goosebumps", file:"music/goosebumps.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" }
+    { title:"90210", file:"MUSIC/90210.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
+    { title:"FE!N", file:"MUSIC/FE!N.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
+    { title:"MY EYES", file:"MUSIC/MY EYES.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
+    { title:"sdp interlude", file:"MUSIC/sdp interlude.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
+    { title:"goosebumps", file:"MUSIC/goosebumps.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" }
   ]
 },
 {
   name:"Don Toliver",
   cover:"PICS/don.jfif",
   songs:[ 
-    { title:"Tiramisu", file:"music/Tiramisu.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
-    { title:"E85", file:"music/E85.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
-    { title:"No Idea", file:"music/No Idea.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
-    { title:"No Pole", file:"music/No Pole.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
-    { title:"You", file:"music/You (feat. Travis Scott).mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" }
+    { title:"Tiramisu", file:"MUSIC/Tiramisu.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
+    { title:"E85", file:"MUSIC/E85.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
+    { title:"No Idea", file:"MUSIC/No Idea.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
+    { title:"No Pole", file:"MUSIC/No Pole.mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" },
+    { title:"You", file:"MUSIC/You (feat. Travis Scott).mp3", artist:"Don Toliver", album: "Don Toliver", genre: "Pop" }
   ]
 }
 ];
