@@ -123,7 +123,7 @@ const albums = [
     { title:"90210", file:"MUSIC/90210.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
     { title:"FE!N", file:"MUSIC/FE!N.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
     { title:"MY EYES", file:"MUSIC/MY EYES.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
-    { title:"sdp interlude", file:"MUSIC/sdp interlude.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
+    { title:"sdp interlude", file:"MUSIC/sdp interlude.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip-Hop" },
     { title:"goosebumps", file:"MUSIC/goosebumps.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" }
   ]
 },
