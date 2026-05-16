@@ -111,7 +111,7 @@ const albums = [
   songs:[ 
     { title:"Pink + White", file:"MUSIC/Pink + White.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
     { title:"Nights", file:"MUSIC/Nights.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
-    { title:"White Ferarri", file:"MUSIC/White Ferarri.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
+    { title:"White Ferrari", file:"MUSIC/White Ferrari.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
     { title:"Seigfried", file:"MUSIC/Seigfried.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" },
     { title:"Godspeed", file:"MUSIC/Godspeed.mp3", artist:"Frank Ocean", album: "Blond", genre: "R&B" }
   ]
