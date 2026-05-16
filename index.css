@@ -440,52 +440,94 @@ canvas{
   background:transparent;
 }
 
-/* ================= TABLET ================= */
+/* ================= RESPONSIVE FIXES ONLY ================= */
+
+/* Prevent horizontal overflow everywhere */
+html,
+body{
+  width:100%;
+  overflow-x:hidden;
+}
+
+/* Make flex/grid children shrink properly */
+.content,
+.bigbox,
+.music-panels,
+.panel,
+.page{
+  min-width:0;
+}
+
+/* Better desktop scaling */
+.top{
+  align-items:stretch;
+}
+
+.bigbox{
+  align-items:stretch;
+}
+
+/* ================= LARGE TABLET ================= */
 
 @media(max-width:1200px){
+
+  .box{
+    gap:15px;
+  }
 
   .music-panels{
     grid-template-columns:1fr 1fr;
   }
 
   .player-side{
-    width:40%;
+    width:100%;
+    min-width:0;
+  }
+
+  .mini-player{
+    width:min(420px,92vw);
   }
 
 }
 
-/* ================= MOBILE ================= */
+/* ================= TABLET ================= */
 
 @media(max-width:1000px){
 
+  html,
   body{
-    overflow:auto;
+    height:auto;
+    overflow-x:hidden;
+    overflow-y:auto;
   }
 
   .box{
     flex-direction:column;
     height:auto;
-    overflow:auto;
-    padding:15px;
+    min-height:100vh;
+    overflow:visible;
   }
 
   .nav{
     width:100%;
     min-width:100%;
-    padding:15px;
+    overflow:hidden;
   }
 
   .nav ul{
     flex-direction:row;
     overflow-x:auto;
-    gap:10px;
+    overflow-y:hidden;
+    padding-bottom:5px;
   }
 
   .nav-btn{
     min-width:140px;
+    flex-shrink:0;
   }
 
   .content{
+    width:100%;
     overflow:visible;
   }
 
@@ -496,10 +538,12 @@ canvas{
 
   .top{
     grid-template-columns:1fr;
+    min-height:auto;
   }
 
   .bigbox{
     flex-direction:column;
+    height:auto;
     overflow:visible;
   }
 
@@ -509,54 +553,57 @@ canvas{
   }
 
   .music-panels{
+    width:100%;
     grid-template-columns:1fr;
+    overflow:visible;
+  }
+
+  .panel{
+    overflow:visible;
   }
 
   .albums-grid{
-    grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
   }
 
   .metrics-grid{
     grid-template-columns:1fr;
   }
 
-  .album-card img{
-    height:180px;
-  }
-
-  .now-cover{
-    max-width:240px;
-  }
-
   .mini-player{
-    width:95%;
-    left:50%;
-    transform:translateX(-50%);
+    width:min(500px,94vw);
+    bottom:15px;
   }
 
 }
 
-/* ================= SMALL MOBILE ================= */
+/* ================= MOBILE ================= */
 
-@media(max-width:600px){
+@media(max-width:768px){
+
+  body{
+    font-size:14px;
+  }
 
   .box{
-    padding:10px;
-    gap:10px;
+    padding:12px;
+    gap:12px;
   }
 
   .smallbox,
   .bigbox,
   .glass{
     padding:15px;
+    border-radius:16px;
   }
 
-  .album-card{
-    padding:15px;
+  .title-row{
+    gap:10px;
+    flex-wrap:wrap;
   }
 
-  .album-card img{
-    height:150px;
+  .artist-list{
+    gap:12px;
   }
 
   .artist-card{
@@ -567,26 +614,224 @@ canvas{
     height:100px;
   }
 
+  .album-item{
+    gap:10px;
+  }
+
+  .album-item img{
+    width:55px;
+    height:55px;
+  }
+
+  .now-cover{
+    width:100%;
+    max-width:220px;
+  }
+
+  .controls{
+    width:100%;
+    justify-content:center;
+  }
+
   .controls button{
-    width:45px;
-    height:45px;
-    font-size:16px;
+    width:44px;
+    height:44px;
+    font-size:15px;
+  }
+
+  .albums-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+  }
+
+  .album-card img{
+    height:160px;
+  }
+
+  .profile-left{
+    flex-direction:column;
+    align-items:flex-start;
   }
 
   .mini-player{
-    width:96%;
+    width:95vw;
+    padding:12px;
+    border-radius:16px;
+  }
+
+  .mini-top{
+    gap:10px;
+  }
+
+  .mini-left{
+    flex:1;
+    min-width:0;
+  }
+
+  #miniTitle{
+    max-width:100%;
+  }
+
+  .mini-controls{
+    gap:6px;
+    flex-shrink:0;
+  }
+
+  .mini-controls button{
+    font-size:16px;
+  }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+  .box{
+    padding:10px;
+  }
+
+  .nav{
+    padding:12px;
+  }
+
+  .nav-btn{
+    min-width:120px;
+    padding:10px;
+    gap:10px;
+  }
+
+  .nav-btn img{
+    width:38px;
+    height:38px;
+  }
+
+  .logo{
+    font-size:18px;
+    margin-bottom:20px;
+  }
+
+  .smallbox,
+  .bigbox,
+  .glass{
+    padding:12px;
+  }
+
+  .artist-card{
+    min-width:90px;
+  }
+
+  .artist-card img{
+    height:90px;
+  }
+
+  .album-item{
+    padding:8px;
+  }
+
+  .album-item img{
+    width:50px;
+    height:50px;
+  }
+
+  .song-item{
+    padding:10px;
+  }
+
+  .albums-grid{
+    grid-template-columns:1fr;
+  }
+
+  .album-card img{
+    height:200px;
+  }
+
+  .profile-avatar{
+    width:75px;
+    height:75px;
+  }
+
+  .metric-card h1{
+    font-size:32px;
+  }
+
+  .mini-player{
+    width:96vw;
+    left:50%;
+    transform:translateX(-50%);
     bottom:10px;
     padding:10px;
   }
 
-  .mini-left img{
-    width:45px;
-    height:45px;
+  #miniCover{
+    width:46px;
+    height:46px;
+  }
+
+  #miniTitle{
+    font-size:13px;
+  }
+
+  #miniArtist{
+    font-size:11px;
   }
 
   .mini-controls{
-    display:flex;
+    gap:4px;
+  }
+
+  .mini-controls button{
+    font-size:15px;
+  }
+
+  #miniCurrent,
+  #miniDuration{
+    font-size:10px;
+    min-width:28px;
+  }
+
+  .volume-control{
+    width:100%;
+    justify-content:center;
+  }
+
+  #volumeSlider{
+    flex:1;
+    width:auto;
+  }
+
+}
+
+/* ================= VERY SMALL DEVICES ================= */
+
+@media(max-width:360px){
+
+  .nav-btn{
+    min-width:110px;
+    font-size:12px;
+  }
+
+  .controls{
     gap:8px;
+  }
+
+  .controls button{
+    width:40px;
+    height:40px;
+  }
+
+  .mini-player{
+    width:98vw;
+    border-radius:14px;
+  }
+
+  #miniCover{
+    width:42px;
+    height:42px;
+  }
+
+  .mini-controls button{
+    font-size:14px;
   }
 
 }
