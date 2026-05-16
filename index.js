@@ -9,8 +9,8 @@ const albums = [
   name:"Thriller",
   cover:"PICS/thriller album.jpg",
   songs:[
-    { title:"Billie Jean", file:"music/BILLIE JEAN.weba", artist:"Michael Jackson", album: "Thriller", genre: "Pop",}, 
-    { title:"Thriller", file:"music/thriller.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
+    { title:"Billie Jean", file:"MUSIC/BILLIE JEAN.weba", artist:"Michael Jackson", album: "Thriller", genre: "Pop",}, 
+    { title:"Thriller", file:"MUSIC/thriller.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
     { title:"Wanna Be Startin' Somethin", file:"music/Wanna Be Startin' Somethin'.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
     { title:"The Lady In My Life", file:"music/The Lady In My Life.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
     { title:"The Girl Is Mine", file:"music/The Girl Is Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
@@ -23,9 +23,9 @@ const albums = [
   name:"After Hours",
   cover:"PICS/The Weeknd.jfif",
   songs:[
-    { title:"The Morning", file:"music/The Morning.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"}, 
-    { title:"The Hills", file:"music/The Hills.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"},
-    { title:"Sao Paulo", file:"music/sao.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B" },
+    { title:"The Morning", file:"MUSIC/The Morning.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"}, 
+    { title:"The Hills", file:"MUSIC/The Hills.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"},
+    { title:"Sao Paulo", file:"MUSIC/sao.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B" },
     { title:"I Was Never There", file:"music/I Was Never There.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B" },
     { title:"What You Need", file:"music/What You Need.mp3", artist:"The Weeknd", album: "After Hours", genre: "R&B"}
   ]
@@ -34,8 +34,8 @@ const albums = [
   name:"Chicken n Beer",
   cover:"PICS/chicken.jfif",
   songs:[
-     { title:"Act A Fool", file:"music/Act A Fool luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"}, 
-    { title:"Move Bitch", file:"music/Move Bitch 2.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"},
+     { title:"Act A Fool", file:"MUSIC/Act A Fool luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"}, 
+    { title:"Move Bitch", file:"MUSIC/Move Bitch 2.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"},
     { title:"Stand Up", file:"music/Stand Up luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop" },
     { title:"Hard Times", file:"music/Hard Times luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop" },
     { title:"Blow It Out", file:"music/Blow It Out luda.mp3", artist:"Ludacris", album: "Chicken n Beer", genre: "Hip Hop"}
