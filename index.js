@@ -11,8 +11,8 @@ const albums = [
   songs:[
     { title:"Billie Jean", file:"MUSIC/BILLIE JEAN.weba", artist:"Michael Jackson", album: "Thriller", genre: "Pop",}, 
     { title:"Thriller", file:"MUSIC/thriller.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
-    { title:"Wanna Be Startin' Somethin", file:"music/Wanna Be Startin' Somethin'.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
-    { title:"The Lady In My Life", file:"music/The Lady In My Life.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
+    { title:"Wanna Be Startin' Somethin", file:"MUSIC/Wanna Be Startin' Somethin'.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
+    { title:"The Lady In My Life", file:"MUSIC/The Lady In My Life.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
     { title:"The Girl Is Mine", file:"music/The Girl Is Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
     { title:"Human Nature", file:"music/Human Nature.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
     { title:"Baby Be Mine", file:"music/Baby Be Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"}, 
