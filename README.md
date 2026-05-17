@@ -132,19 +132,29 @@ Immediate Feedback: hover effects and real-time updates
 Project Structure
 
 index.html
+
 index.css
+
 index.js
+
 PICS/
+
 MUSIC/
-docs/
-design-system.md
+
+USER PERSONA
+
+Design System
+
 README.md
 
 Project Links
 
 WEBSITE: https://j-dashhhh.github.io/TESTER/
+
 WIREFRAME: https://canva.link/e6axo8nr2nadgwn
+
 USER PERSONA: https://canva.link/gt910a81chkhuuo
+
 DESIGN DOCUMENTATION: https://docs.google.com/document/d/1X5ifWI5rt986IKuRnvZnj5FtxfEZN1IZ9OdNo6Vpuys/edit?usp=sharing
 
 Developers
