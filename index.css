@@ -440,94 +440,52 @@ canvas{
   background:transparent;
 }
 
-/* ================= RESPONSIVE FIXES ONLY ================= */
-
-/* Prevent horizontal overflow everywhere */
-html,
-body{
-  width:100%;
-  overflow-x:hidden;
-}
-
-/* Make flex/grid children shrink properly */
-.content,
-.bigbox,
-.music-panels,
-.panel,
-.page{
-  min-width:0;
-}
-
-/* Better desktop scaling */
-.top{
-  align-items:stretch;
-}
-
-.bigbox{
-  align-items:stretch;
-}
-
-/* ================= LARGE TABLET ================= */
+/* ================= TABLET ================= */
 
 @media(max-width:1200px){
-
-  .box{
-    gap:15px;
-  }
 
   .music-panels{
     grid-template-columns:1fr 1fr;
   }
 
   .player-side{
-    width:100%;
-    min-width:0;
-  }
-
-  .mini-player{
-    width:min(420px,92vw);
+    width:40%;
   }
 
 }
 
-/* ================= TABLET ================= */
+/* ================= MOBILE ================= */
 
 @media(max-width:1000px){
 
-  html,
   body{
-    height:auto;
-    overflow-x:hidden;
-    overflow-y:auto;
+    overflow:auto;
   }
 
   .box{
     flex-direction:column;
     height:auto;
-    min-height:100vh;
-    overflow:visible;
+    overflow:auto;
+    padding:15px;
   }
 
   .nav{
     width:100%;
     min-width:100%;
-    overflow:hidden;
+    padding:15px;
   }
 
   .nav ul{
     flex-direction:row;
     overflow-x:auto;
-    overflow-y:hidden;
-    padding-bottom:5px;
+    gap:10px;
   }
 
   .nav-btn{
     min-width:140px;
-    flex-shrink:0;
   }
 
   .content{
-    width:100%;
     overflow:visible;
   }
 
@@ -538,12 +496,10 @@ body{
 
   .top{
     grid-template-columns:1fr;
-    min-height:auto;
   }
 
   .bigbox{
     flex-direction:column;
-    height:auto;
     overflow:visible;
   }
 
@@ -553,57 +509,54 @@ body{
   }
 
   .music-panels{
-    width:100%;
     grid-template-columns:1fr;
-    overflow:visible;
-  }
-
-  .panel{
-    overflow:visible;
   }
 
   .albums-grid{
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
   }
 
   .metrics-grid{
     grid-template-columns:1fr;
   }
 
+  .album-card img{
+    height:180px;
+  }
+
+  .now-cover{
+    max-width:240px;
+  }
+
   .mini-player{
-    width:min(500px,94vw);
-    bottom:15px;
+    width:95%;
+    left:50%;
+    transform:translateX(-50%);
   }
 
 }
 
-/* ================= MOBILE ================= */
+/* ================= SMALL MOBILE ================= */
 
-@media(max-width:768px){
-
-  body{
-    font-size:14px;
-  }
+@media(max-width:600px){
 
   .box{
-    padding:12px;
-    gap:12px;
+    padding:10px;
+    gap:10px;
   }
 
   .smallbox,
   .bigbox,
   .glass{
     padding:15px;
-    border-radius:16px;
   }
 
-  .title-row{
-    gap:10px;
-    flex-wrap:wrap;
+  .album-card{
+    padding:15px;
   }
 
-  .artist-list{
-    gap:12px;
+  .album-card img{
+    height:150px;
   }
 
   .artist-card{
@@ -614,224 +567,26 @@ body{
     height:100px;
   }
 
-  .album-item{
-    gap:10px;
-  }
-
-  .album-item img{
-    width:55px;
-    height:55px;
-  }
-
-  .now-cover{
-    width:100%;
-    max-width:220px;
-  }
-
-  .controls{
-    width:100%;
-    justify-content:center;
-  }
-
   .controls button{
-    width:44px;
-    height:44px;
-    font-size:15px;
-  }
-
-  .albums-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-  }
-
-  .album-card img{
-    height:160px;
-  }
-
-  .profile-left{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  .mini-player{
-    width:95vw;
-    padding:12px;
-    border-radius:16px;
-  }
-
-  .mini-top{
-    gap:10px;
-  }
-
-  .mini-left{
-    flex:1;
-    min-width:0;
-  }
-
-  #miniTitle{
-    max-width:100%;
-  }
-
-  .mini-controls{
-    gap:6px;
-    flex-shrink:0;
-  }
-
-  .mini-controls button{
+    width:45px;
+    height:45px;
     font-size:16px;
   }
 
-}
-
-/* ================= SMALL MOBILE ================= */
-
-@media(max-width:480px){
-
-  .box{
-    padding:10px;
-  }
-
-  .nav{
-    padding:12px;
-  }
-
-  .nav-btn{
-    min-width:120px;
-    padding:10px;
-    gap:10px;
-  }
-
-  .nav-btn img{
-    width:38px;
-    height:38px;
-  }
-
-  .logo{
-    font-size:18px;
-    margin-bottom:20px;
-  }
-
-  .smallbox,
-  .bigbox,
-  .glass{
-    padding:12px;
-  }
-
-  .artist-card{
-    min-width:90px;
-  }
-
-  .artist-card img{
-    height:90px;
-  }
-
-  .album-item{
-    padding:8px;
-  }
-
-  .album-item img{
-    width:50px;
-    height:50px;
-  }
-
-  .song-item{
-    padding:10px;
-  }
-
-  .albums-grid{
-    grid-template-columns:1fr;
-  }
-
-  .album-card img{
-    height:200px;
-  }
-
-  .profile-avatar{
-    width:75px;
-    height:75px;
-  }
-
-  .metric-card h1{
-    font-size:32px;
-  }
-
   .mini-player{
-    width:96vw;
-    left:50%;
-    transform:translateX(-50%);
+    width:96%;
     bottom:10px;
     padding:10px;
   }
 
-  #miniCover{
-    width:46px;
-    height:46px;
-  }
-
-  #miniTitle{
-    font-size:13px;
-  }
-
-  #miniArtist{
-    font-size:11px;
+  .mini-left img{
+    width:45px;
+    height:45px;
   }
 
   .mini-controls{
-    gap:4px;
-  }
-
-  .mini-controls button{
-    font-size:15px;
-  }
-
-  #miniCurrent,
-  #miniDuration{
-    font-size:10px;
-    min-width:28px;
-  }
-
-  .volume-control{
-    width:100%;
-    justify-content:center;
-  }
-
-  #volumeSlider{
-    flex:1;
-    width:auto;
-  }
-
-}
-
-/* ================= VERY SMALL DEVICES ================= */
-
-@media(max-width:360px){
-
-  .nav-btn{
-    min-width:110px;
-    font-size:12px;
-  }
-
-  .controls{
+    display:flex;
     gap:8px;
-  }
-
-  .controls button{
-    width:40px;
-    height:40px;
-  }
-
-  .mini-player{
-    width:98vw;
-    border-radius:14px;
-  }
-
-  #miniCover{
-    width:42px;
-    height:42px;
-  }
-
-  .mini-controls button{
-    font-size:14px;
   }
 
 }
@@ -1227,4 +982,371 @@ body{
 /* HOVER EFFECT */
 .volume-control:hover {
   background: rgba(255, 255, 255, 0.12);
+}
+
+/* ================= FINAL RESPONSIVE FIX ================= */
+
+html,
+body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+/* FIX FLEX OVERFLOW */
+.content,
+.page,
+.bigbox,
+.music-panels,
+.panel{
+  min-width:0;
+}
+
+/* FIX IMAGES */
+img{
+  display:block;
+}
+
+/* FIX PLAYER OVERFLOW */
+.player-side{
+  min-width:0;
+}
+
+/* FIX SONG TEXT OVERFLOW */
+.song-item,
+.album-item,
+.artist-card,
+.mini-left{
+  min-width:0;
+}
+
+.song-item span,
+.album-item h4,
+.album-item p,
+#miniTitle,
+#miniArtist{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+/* FIX GRID COLLAPSE */
+.music-panels{
+  align-items:stretch;
+}
+
+/* ================= LAPTOP ================= */
+
+@media(max-width:1200px){
+
+  .box{
+    gap:15px;
+    padding:15px;
+  }
+
+  .player-side{
+    width:38%;
+  }
+
+  .music-panels{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .mini-player{
+    width:min(420px,92vw);
+  }
+
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:1000px){
+
+  html,
+  body{
+    height:auto;
+    overflow-y:auto;
+  }
+
+  .box{
+    flex-direction:column;
+    height:auto;
+    min-height:100vh;
+    overflow:visible;
+  }
+
+  .nav{
+    width:100%;
+    min-width:100%;
+    overflow:hidden;
+  }
+
+  .nav ul{
+    flex-direction:row;
+    overflow-x:auto;
+    overflow-y:hidden;
+    padding-bottom:5px;
+  }
+
+  .nav-btn{
+    flex-shrink:0;
+    min-width:140px;
+  }
+
+  .content{
+    overflow:visible;
+  }
+
+  .page{
+    height:auto;
+    overflow:visible;
+  }
+
+  .top{
+    grid-template-columns:1fr;
+  }
+
+  .bigbox{
+    flex-direction:column;
+    overflow:visible;
+  }
+
+  .player-side{
+    width:100%;
+    min-width:100%;
+  }
+
+  .music-panels{
+    grid-template-columns:1fr;
+    overflow:visible;
+  }
+
+  .panel{
+    overflow:visible;
+  }
+
+  .albums-grid{
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  }
+
+  .mini-player{
+    width:min(500px,94vw);
+  }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+  body{
+    font-size:14px;
+  }
+
+  .box{
+    padding:12px;
+    gap:12px;
+  }
+
+  .smallbox,
+  .bigbox,
+  .glass{
+    padding:15px;
+    border-radius:16px;
+  }
+
+  .title-row{
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .artist-card{
+    min-width:95px;
+  }
+
+  .artist-card img{
+    height:95px;
+  }
+
+  .album-item{
+    gap:10px;
+  }
+
+  .album-item img{
+    width:55px;
+    height:55px;
+  }
+
+  .now-cover{
+    max-width:220px;
+  }
+
+  .controls{
+    width:100%;
+  }
+
+  .controls button{
+    width:44px;
+    height:44px;
+    font-size:15px;
+  }
+
+  .albums-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+  }
+
+  .album-card img{
+    height:170px;
+  }
+
+  .profile-left{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .mini-player{
+    width:95vw;
+    padding:12px;
+  }
+
+  #miniTitle{
+    max-width:100%;
+  }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+  .box{
+    padding:10px;
+  }
+
+  .nav{
+    padding:12px;
+  }
+
+  .nav-btn{
+    min-width:120px;
+    padding:10px;
+    gap:10px;
+  }
+
+  .nav-btn img{
+    width:38px;
+    height:38px;
+  }
+
+  .logo{
+    font-size:18px;
+    margin-bottom:20px;
+  }
+
+  .smallbox,
+  .bigbox,
+  .glass{
+    padding:12px;
+  }
+
+  .artist-card{
+    min-width:85px;
+  }
+
+  .artist-card img{
+    height:85px;
+  }
+
+  .album-item{
+    padding:8px;
+  }
+
+  .album-item img{
+    width:48px;
+    height:48px;
+  }
+
+  .song-item{
+    padding:10px;
+  }
+
+  .albums-grid{
+    grid-template-columns:1fr;
+  }
+
+  .album-card img{
+    height:200px;
+  }
+
+  .profile-avatar{
+    width:75px;
+    height:75px;
+  }
+
+  .metric-card h1{
+    font-size:32px;
+  }
+
+  .mini-player{
+    width:96vw;
+    bottom:10px;
+    padding:10px;
+    border-radius:14px;
+  }
+
+  #miniCover{
+    width:44px;
+    height:44px;
+  }
+
+  .mini-controls{
+    gap:5px;
+  }
+
+  .mini-controls button{
+    font-size:15px;
+  }
+
+  #miniCurrent,
+  #miniDuration{
+    min-width:28px;
+    font-size:10px;
+  }
+
+  .volume-control{
+    width:100%;
+    justify-content:center;
+  }
+
+  #volumeSlider{
+    flex:1;
+    width:auto;
+  }
+
+}
+
+/* ================= VERY SMALL DEVICES ================= */
+
+@media(max-width:360px){
+
+  .nav-btn{
+    min-width:110px;
+    font-size:12px;
+  }
+
+  .controls button{
+    width:40px;
+    height:40px;
+  }
+
+  .mini-player{
+    width:98vw;
+  }
+
+  #miniCover{
+    width:40px;
+    height:40px;
+  }
+
 }
