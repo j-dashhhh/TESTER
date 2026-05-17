@@ -12,7 +12,7 @@ const albums = [
     { title:"Billie Jean", file:"MUSIC/BILLIE JEAN.weba", artist:"Michael Jackson", album: "Thriller", genre: "Pop",}, 
     { title:"Thriller", file:"MUSIC/Thriller.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
     { title:"Wanna Be Startin' Somethin", file:"MUSIC/Wanna Be Startin' Somethin'.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
-    { title:"The Lady in My Life", file:"MUSIC/The Lady in My Life.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
+    { title:"The Lady In My Life", file:"MUSIC/The Lady in My Life.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop" },
     { title:"The Girl Is Mine", file:"MUSIC/The Girl Is Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
     { title:"Human Nature", file:"MUSIC/Human Nature.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"},
     { title:"Baby Be Mine", file:"MUSIC/Baby Be Mine.mp3", artist:"Michael Jackson", album: "Thriller", genre: "Pop"}, 
@@ -123,7 +123,7 @@ const albums = [
     { title:"90210", file:"MUSIC/90210.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
     { title:"FE!N", file:"MUSIC/FE!N.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
     { title:"MY EYES", file:"MUSIC/MY EYES.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
-    { title:"sdp interlude", file:"MUSIC/sdp interlude.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip-Hop" },
+    { title:"sdp interlude", file:"MUSIC/sdp interlude.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" },
     { title:"goosebumps", file:"MUSIC/goosebumps.mp3", artist:"Travis Scott", album: "Astroworld", genre: "Hip Hop" }
   ]
 },
@@ -954,3 +954,4 @@ miniProgress.addEventListener("input", () => {
     (miniProgress.value / 100) * audio.duration;
 
 });
+
